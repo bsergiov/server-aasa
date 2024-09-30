@@ -8,7 +8,7 @@ php -S localhost:8000
 - Командой `docker compose up` запускаем сборку контейнера.
 - В nginx создаем запись домена со следующим содержимым
   ```shell
-  server {
+server {
     listen 80;
     server_name somedoami.com;
 
