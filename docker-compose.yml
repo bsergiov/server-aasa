@@ -5,4 +5,4 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./src:/var/www/html
+      - .:/var/www/html  # Синхронизируем корень проекта с контейнером
