@@ -1,9 +1,26 @@
-## Запуск сервера локально для отладки.
+## Apple App Site Association
+
+### Назначение
+Это простое PHP-приложение, для тестировния `universal links` и App Clip, которое работает внутри контейнера Docker и использует Composer для управления зависимостями.
+
+### Предварительные требования.
+- Docker
+- Docker Compose
+- Nginx
+
+
+### Запуск сервера локально для отладки.
 ```bash
 php -S localhost:8000
 ```
 
-## Deploy
+### Начало работы.
+Клонируйте репозиторий:
+```bash
+git clone https://github.com/bsergiov/server-aasa.git
+cd server-aasa
+```
+
 - Командой `cp example.env .env` копируем файл, актуализируем данные в нем.
 - Добавляем прав на выполнение файлу `entrypoint.sh` командой `chmod +x entrypoint.sh`.
 - Командой `docker compose up` запускаем сборку контейнера.
