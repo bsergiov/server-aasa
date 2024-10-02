@@ -5,6 +5,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 $app_id = $_ENV['APP_ID'];
+$app_clip_id = $_ENV['APP_CLIP_ID'];
 
 header('Content-Type: application/json');
 
@@ -28,6 +29,9 @@ switch ($uri) {
                         "paths" => ["*"]
                     ]
                 ]
+            ],
+            "appclips" => [
+                "apps" => $app_clip_id
             ]
         ]);
         break;
