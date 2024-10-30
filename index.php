@@ -31,7 +31,7 @@ switch ($uri) {
                 ]
             ],
             "appclips" => [
-                "apps" => $app_clip_id
+                "apps" => [$app_clip_id]
             ]
         ]);
         break;
