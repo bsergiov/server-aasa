@@ -11,6 +11,6 @@
         ]
     },
     "appclips": {
-        "apps": "teamID.com.somedomain.Clip"
+        "apps": ["teamID.com.somedomain.Clip"]
     }
 }
